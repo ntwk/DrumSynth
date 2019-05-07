@@ -1,0 +1,23 @@
+; This file is maintained by HCW. Do not modify this file directly.
+
+; This is an initial file for Microsoft Help Compiler hc31.exe
+; Copyright(c)1995, Paul Kellett
+
+[OPTIONS]
+;copyright = DrumSynth ©1997, Paul Kellett.
+;icon = bluehelp.ico
+COMPRESS=12 Hall Zeck
+ERRORLOG=drumsyn.err
+LCID=0x809 0x0 0x0 ; English (United Kingdom)
+REPORT=Yes
+TITLE=DrumSynth Help
+HLP=drumsyn.hlp
+
+[FILES]
+drumsyn.rtf
+
+[WINDOWS]
+main="DrumSynth Help",(318,1,695,969),27904,,(r12632256),f2
+
+[CONFIG]
+BrowseButtons()

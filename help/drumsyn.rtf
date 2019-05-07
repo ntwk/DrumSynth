@@ -1,0 +1,144 @@
+{\rtf1\ansi{\fonttbl\f0\fswiss Arial;\f1\fdecor Courier New;\f2\ftech Symbol;}\deff0\fs20\sa120{\colortbl\red0\green0\blue0;\red0\green0\blue127;\red127\green0\blue0;\red96\green96\blue96;}
+
+#{\footnote CONTENTS}
+${\footnote DrumSynth Help}
+K{\footnote Contents}
++{\footnote browse:01}
+\{bmr mdagrey.bmp\}\line{\b\fs50 DrumSynth}\par
+DrumSynth is a drum sound synthesizer. It's ideal for re-creating classic electronic drum machine sounds as it uses the same simple building blocks, but can also produce acoustic drums, instrument sounds and sound effects.
+\par
+{\uldb\b Overview}{\v OVERVIEW}
+\par
+{\uldb\b Controls}{\v CONTROL}
+\par
+{\uldb\b Loading & Saving}{\v FILES}
+\par
+{\uldb Installation Notes}{\v INFO}
+\par
+{\uldb Copyright & Disclaimer}{\v COPY}
+\par
+
+\page
+
+#{\footnote OVERVIEW}
+${\footnote Overview}
++{\footnote browse:02}
+K{\footnote Introduction; Overview}
+\line{\b\fs30 Overview}
+\par
+DrumSynth does not try to be a real-time analogue synthesizer simulation! Plenty of these exist already. What DrumSynth {\i does} do is offer a simple set of sound creation methods based on the electronics in early drum machines such as the Roland TR-808. The controls are all layed out on a single page for fast and intuitive operation.
+\par
+DrumSynth allows you to organise and audition your sounds, and store and distribute them in very small .DS files. FruityLoops (http://www.fruityloops.com) is the best tool for building patterns with DrumSynth sounds as it understands DS files - to use DrumSynth sounds in other applications you need to save the sound as a WAV file.
+\par
+To use DrumSynth just turn on whichever sections you want to use, adjust the parameters and envelopes, and click {\b Play} (or press {\b Enter} or {\b Ctrl}) to hear the result. The parameters are all described in this help file.
+\page
+
+#{\footnote CONTROL}
+${\footnote Synthesizer Controls}
++{\footnote browse:03}
+K{\footnote Instructions; Controls}
+\line{\b\fs30 Controls}
+\par
+{\b Envelopes}\line
+Each section uses an envelope for volume control. There is also an envelope to control the filter cut-off frequency. One envelope at a time is selected for editing, and any other active envelopes appear 'greyed'. 
+\par
+DrumSynth changes which envelope is displayed automatically when you switch a section on, but you can select a particular envelope with the buttons at the bottom left of the envelope display or by right-clicking the section title. 
+\par
+The length of time shown can be adjusted with the buttons at the bottom right of the envelope display, allowing you to zoom in to adjust the attack, or zoom out to create longer sounds.
+\par
+You can adjust the envelope shape by dragging points with the left button. If you click outside any existing points you will get a new point. To delete a point drag it off the bottom of the display.
+\par
+Right-clicking on the envelope display brings up a menu allowing you to copy the current envelope, paste a previously copied envelope, or reset the current envelope to it's default shape.
+\par
+\par
+{\b Tone}\line
+The Tone Generator produces a swept-frequency sine wave.
+\par
+The frequency sweep is defined by the start and end frequencies in Hz, and can vary from a linear sweep to a very fast sweep that reaches the end frequency almost immediately. The starting phase can be varied to produce a click. 
+\par
+\par
+{\b Overtones}\line
+The Overtone Generator produces two waveforms that can be played separately or combined by frequency modulation, ring modulation, or a special 'cymbal tone' mode.
+\par
+The two generators have selectable waveform and frequency and can also track the Tone Generator frequency (for example if the tone generator sweeps from 100 Hz to 50 Hz, an overtone at 300 Hz with tracking will sweep from 300 Hz to 150 Hz).
+\par
+Normally the two waveforms are mixed with the Balance control, but for frequency modulation and ring modulation the second wave modulates the first so the Balance control becomes a 'Drive' control for the amount of modulation.
+\par
+In the cymbal mode a 'sea' of tones are produced based on the two overtone frequencies - the more unrelated these two frequencies are the more 'noisy' the result will be.  In this mode the Balance control becomes a Resonance control, and the second overtone envelope allows different frequency ranges to be emphasised.
+\par
+\par
+{\b Noise}\line
+The Noise Generator produces white noise and can have it's spectrum tilted to produce other noise 'colours'. The displayed colours are not technically correct and are only shown as a guide.
+\par
+If 'always same random sequence' is selected, all the noise generators produce a fixed random sequence which can eliminate unwanted variations in tone, particularly for very short sounds.
+\par
+\par
+{\b Noise Band 1, 2}\line
+The Noise Band sections each produce a band of noise with adjustable centre frequency and bandwidth.\par
+\par
+{\b Distortion}\line
+The whole waveform can be clipped and degraded to a lower bit resolution or bandwidth. Often a little clipping will make a sound louder and 'harder' without sounding obviously distorted.
+\par
+\par
+{\b Filter}\line
+A resonant high-pass/low-pass filter can be applied to the whole sound or just the Overtones section. The filter has its own envelope to control cut-off frequency and will self-oscillate at the highest resonance setting. Note that the last segment of the filter envelope is not shown - it just continues forever at the same level as the last point.
+\par
+\par
+{\b Master}\line
+The sound can be tuned in semitones and cents, and timestretched from 20% to 1000% of the original length. The noise generator output is not affected by tuning so other parameters may also have to be adjusted to get a 'slowed down' sound. 
+\page
+
+#{\footnote FILES}
+${\footnote Loading & Saving}
++{\footnote browse:04}
+K{\footnote File Controls; Saving; Loading}
+\line{\b\fs30Loading & Saving}
+\par
+DrumSynth presents files in a different way to most Windows programs. You select a 'kit' of DrumSynth sounds then select individual sounds in that kit. When you click on a sound you will hear it's associated WAV file (if available). You can then select the {\b Load} button to load that sound for editing. 
+\line\line
+To save a sound, click the {\b Save} button. You will be asked for a filename and if you also want to save a .WAV file (you probably do). It is up to you to change the filename if you don't want to overwrite an existing file!
+\par
+Right-clicking on the file list brings up some more options: You can make a new kit, and you can change where DrumSynth looks for kits of .DS files. You can also delete the selected sound, and generate or delete all the WAV files in the current kit. WAV files can always be regenerated if you have the corresponding .DS file.
+\par
+You can keep other WAV files in DrumSynth's 'kit' folders. DrumSynth will let you preview these sounds, but can't open them for editing - that sort of analysis and re-synthesis is a few years away yet!
+\par
+If you have generated the WAV files in a kit, you can play them by pressing the function keys {\b F1 - F12} (use the Shift and Ctrl keys to play sounds further down the list). Note: most soundcards will only play back one sound at a time - this is not a fault with DrumSynth.
+\par
+If DrumSynth has a problem reading or writing a sound a warning triangle will appear next to the play button - normally this means the file is already open in another application and is unavailable, but can also mean you don't have the latest version of DrumSynth.
+\page
+
+#{\footnote INFO}
+${\footnote Installation, Compatibility}
++{\footnote browse:05}
+\line{\b\fs30 Installation Notes}
+\par
+DrumSynth Consists of the following files:
+\par
+  {\b drumsyn.exe}\line
+  {\b drumsyn.hlp}\line
+  {\b ds2wav.dll}\par
+plus several subfolders of example .DS files. If you are installing DrumSynth from a .ZIP file it is important that you select 'Use Folder Names' so the subfolders are created correctly. 
+\par
+If you want to, make a shortcut to drumsyn.exe in the usual way. DrumSynth does not invade the Windows folders or registry so can be moved, copied and deleted without any problems.
+\par
+DrumSynth requires Windows 95 or later, or anything else that cun run Win32 applications. DrumSynth also needs {\b msvbvm50.dll} in your \'5CWindows\'5CSystem folder - you probably have it already.
+\par
+{\b Using DrumSynth With Other Programs}\line
+To use DrumSynth sounds with most programs you will need to save .WAV files in addition to .DS files. This also lets you audition the sounds in DrumSynth, but uses more storage space.
+
+\par
+If you have another application that uses DrumSynth .DS files such as FruityLoops (http://www.fruityloops.com) it is a good idea to move all your folders of DS files to one place, then use DrumSynth's 'Change Location' (right-click the file list) to tell DrumSynth where to look. \page
+
+#{\footnote COPY}
+${\footnote Copyright Notice, Freeware}
++{\footnote browse:99}
+\line{\b\fs30 Copyright & Disclaimer}
+\par
+{\b DrumSynth Version 2.0}
+\line
+Copyright \'A92000 Paul Kellett (http://www.mda-vst.com)
+\par
+\cf2\fs20
+DrumSynth is free software and is provided 'as is' with no warranty of any kind (and I mean absolutely {\i any} kind of warranty you can think of). You may make and distribute copies.
+\page
+}

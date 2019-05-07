@@ -1,0 +1,6 @@
+LIBRARY     ds2wav
+
+EXPORTS
+   ds2wav       @1
+   ds2mem       @2
+   ds2buf       @3
